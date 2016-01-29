@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html>
   <head>
@@ -5,11 +6,12 @@
     <title>Sample SPA using HashChange</title>
     <script type="text/javascript" charset="utf-8">
       var handleHash = function(){
-      	history.pushState({}, "", index.html");
-        alert("Hash changed to "+location.hash);
+        alert(location.hash);
+        console.log(location);
         document.body.innerHTML = document.querySelector(location.hash).innerHTML;
       };
       window.addEventListener("hashchange", handleHash);
+      window.addEventListener("load", handleHash);
     </script>
     <script type="html/template" id="p1">
       Page 1
