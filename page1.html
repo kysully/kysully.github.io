@@ -32,17 +32,6 @@ body{
 	padding: 10px;
 	text-align: center;
 }
-
-#custom-bootstrap-menu.navbar {
-    font-size: 24px;
-    color: #fff;
-}
-
-#custom-bootstrap-menu a {
-    font-size: 24px;
-    color: #fff;
-}
-
 .buttonStyle {
 	border-radius: 4px;
 	border: thin solid #F0E020;
@@ -67,13 +56,10 @@ body{
 	cursor: pointer;
 }
 
-#drop1 a{
- color: black; 
-}
-
 </style>
 </head>
-<nav id="custom-bootstrap-menu" class="navbar navbar-dark bg-primary">
+
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -83,79 +69,52 @@ body{
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="\">Home</a>
+      <a class="navbar-brand" href="\about.html">Home</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="\page1.html">Getting Started <span class="sr-only">(current)</span></a></li>
-        <li><a href="\about.html">About</a></li>
+        <li class="active"><a href="#">Page 1 <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Page 2</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lessons <span class="caret"></span></a>
-          <ul id = "drop1" class="dropdown-menu">
-            <li><a href="#page1">Introduction to Computer Science (Hello World)</a></li>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#page1">Dropdown 1</a></li>
+            <li><a href="#">Dropdown 2</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Lesson 2</a></li>
+            <li><a href="#">Dropdown 3</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Lesson 3</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Lesson 4</a></li>
+            <li><a href="#">Dropdown 4</a></li>
           </ul>
         </li>
       </ul>
-      
-      
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
-<ol class="breadcrumb">
-  <li class="active">Home</li>
-</ol>
-<ol class="breadcrumb">
-  <li><a href="#">Home</a></li>
-  <li class="active">Library</li>
-</ol>
-<ol class="breadcrumb" style="margin-bottom: 5px;">
-  <li><a href="#">Home</a></li>
-  <li><a href="#">Library</a></li>
-  <li class="active">Data</li>
-</ol>
-
 <body>
-  <div id="mainContent">
-    <p id="helloText">Hello, welcome to Kyle's Multimedia Project. Currently under construction.</p>
-  </div>
-  
-  <div class="card text-xs-center">
-  <div class="card-header">
-    Featured
-  </div>
-  <div class="card-block">
-    <h4 class="card-title">Special title treatment</h4>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-  <div class="card-footer text-muted">
-    2 days ago
-  </div>
-  </div>
-
-
-  <progress class="progress" value="0" max="100">0%</progress>
-  <progress class="progress" value="25" max="100">25%</progress>
-  <progress class="progress" value="50" max="100">50%</progress>
-  <progress class="progress" value="75" max="100">75%</progress>
-  <progress class="progress" value="100" max="100">100%</progress>
-  
-  <nav>
-    <ul class="pager">
-      <li><a href="#">Previous</a></li>
-      <li><a href="#">Next</a></li>
-    </ul>
-  </nav>
+<div id="mainContent">
+<p id="helloText">Page 1. Just a place holder.</p>
 
 </body>
 </html>
-

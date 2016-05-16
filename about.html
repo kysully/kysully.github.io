@@ -35,12 +35,6 @@ body{
 
 #custom-bootstrap-menu.navbar {
     font-size: 24px;
-    color: #fff;
-}
-
-#custom-bootstrap-menu a {
-    font-size: 24px;
-    color: #fff;
 }
 
 .buttonStyle {
@@ -67,8 +61,8 @@ body{
 	cursor: pointer;
 }
 
-#drop1 a{
- color: black; 
+a {
+ color: #fff; 
 }
 
 </style>
@@ -90,10 +84,10 @@ body{
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="\page1.html">Getting Started <span class="sr-only">(current)</span></a></li>
-        <li><a href="\about.html">About</a></li>
+        <li><a href="\about">About</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lessons <span class="caret"></span></a>
-          <ul id = "drop1" class="dropdown-menu">
+          <ul class="dropdown-menu">
             <li><a href="#page1">Introduction to Computer Science (Hello World)</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Lesson 2</a></li>
@@ -110,51 +104,14 @@ body{
   </div><!-- /.container-fluid -->
 </nav>
 
-<ol class="breadcrumb">
-  <li class="active">Home</li>
-</ol>
-<ol class="breadcrumb">
-  <li><a href="#">Home</a></li>
-  <li class="active">Library</li>
-</ol>
 <ol class="breadcrumb" style="margin-bottom: 5px;">
   <li><a href="#">Home</a></li>
-  <li><a href="#">Library</a></li>
-  <li class="active">Data</li>
+  <li class="active">About</li>
 </ol>
 
 <body>
-  <div id="mainContent">
-    <p id="helloText">Hello, welcome to Kyle's Multimedia Project. Currently under construction.</p>
-  </div>
-  
-  <div class="card text-xs-center">
-  <div class="card-header">
-    Featured
-  </div>
-  <div class="card-block">
-    <h4 class="card-title">Special title treatment</h4>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-  <div class="card-footer text-muted">
-    2 days ago
-  </div>
-  </div>
-
-
-  <progress class="progress" value="0" max="100">0%</progress>
-  <progress class="progress" value="25" max="100">25%</progress>
-  <progress class="progress" value="50" max="100">50%</progress>
-  <progress class="progress" value="75" max="100">75%</progress>
-  <progress class="progress" value="100" max="100">100%</progress>
-  
-  <nav>
-    <ul class="pager">
-      <li><a href="#">Previous</a></li>
-      <li><a href="#">Next</a></li>
-    </ul>
-  </nav>
+<div id="mainContent">
+<p id="helloText">This is the About Page!.</p>
 
 </body>
 </html>
