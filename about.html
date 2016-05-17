@@ -17,55 +17,8 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-<style type="text/css">
+<link rel="stylesheet" href="/styles/style.css">
 
-body{
-	background-color: #E3F0FB;
-}
-
-#mainContent {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: xx-large;
-	font-weight: bold;
-	background-color: #E3F0FB;
-	border-radius: 4px;
-	padding: 10px;
-	text-align: center;
-}
-
-#custom-bootstrap-menu.navbar {
-    font-size: 24px;
-}
-
-.buttonStyle {
-	border-radius: 4px;
-	border: thin solid #F0E020;
-	padding: 5px;
-	background-color: #F8F094;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	font-weight: bold;
-	color: #663300;
-	width: 75px;
-}
-
-.buttonStyle:hover {
-	border: thin solid #FFCC00;
-	background-color: #FCF9D6;
-	color: #996633;
-	cursor: pointer;
-}
-.buttonStyle:active {
-	border: thin solid #99CC00;
-	background-color: #F5FFD2;
-	color: #669900;
-	cursor: pointer;
-}
-
-a {
- color: #fff; 
-}
-
-</style>
 </head>
 <nav id="custom-bootstrap-menu" class="navbar navbar-dark bg-primary">
   <div class="container-fluid">
@@ -83,18 +36,16 @@ a {
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="\page1.html">Getting Started <span class="sr-only">(current)</span></a></li>
-        <li><a href="\about">About</a></li>
+        <li class="active"><a href="\start.html">Getting Started <span class="sr-only">(current)</span></a></li>
+        <li><a href="\about.html">About</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lessons <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#page1">Introduction to Computer Science (Hello World)</a></li>
+          <ul id = "drop1" class="dropdown-menu">
+            <li><a href="/lesson1/intro.html">Introduction to Computer Science (Hello World)</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Lesson 2</a></li>
+            <li><a href="/lesson2/intro.html">Working with Data</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Lesson 3</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Lesson 4</a></li>
+            <li><a href="/lesson3/intro.html">Lesson 3</a></li>
           </ul>
         </li>
       </ul>
