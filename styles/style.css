@@ -80,3 +80,11 @@ pre{
 	flex-wrap: wrap;
 	padding: 50px;
 }
+
+#mainContent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
