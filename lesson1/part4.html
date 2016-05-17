@@ -70,67 +70,29 @@
 <ol class="breadcrumb" style="margin-bottom: 5px; display: inline-block; font-size: 20px;">
   <li><a href="../index.html">Home</a></li>
   <li><a href="/lesson1/intro.html">Lesson 1</a></li>
-  <li class="active">Part 4: Working with Variables</li>
+  <li class="active">Part 4: Strings and Numbers</li>
 </ol>
 
 <!-- body -->
 <body>
     
   <div id="mainContent">
-    <p id="introTitle">Lesson 1 - Part 4: Working with Variables (Cont.)</p>
+    <p id="introTitle">Lesson 1 - Part 4: Strings and Numbers</p>
     <div class="wellContent">
-        <div class="well"><strong>Operators</strong> can work on <strong>variables</strong> of type <i>string</i> as well.
+        <div class="well">Now let's take a look at using <strong>Operators</strong> with variables which hold values of type string. <i>(remember strings are just like words; a series of consecutive characters)</i>. By applying the <strong>+ operator</strong> we can combine two strings together. This is known as <strong>string concatenation</strong>.
         <br><br>
-        A list of some javascript string <strong>operators</strong> is below: <br>
-        <table class="table"><tbody><tr>
-        <th style="width:25%">Operator</th>
-        <th>Description</th>
-        </tr>
-        <tr>
-        <td>+</td>
-        <td>Addition</td>
-        </tr>
-        <tr>
-        <td>-</td>
-        <td>Subtraction</td>
-        </tr>
-        <tr>
-        <td>*</td>
-        <td>Multiplication</td>
-        </tr>
-        <tr>
-        <td>/</td>
-        <td>Division</td>
-        </tr>
-        <tr>
-        <td>%</td>
-        <td>Modulus</td>
-        </tr>
-        <tr>
-        <td>++</td>
-        <td>Increment</td>
-        </tr>
-        <tr>
-        <td>--</td>
-        <td>Decrement</td>
-        </tr>
-        </tbody></table>
+        Let's take a look. Like usual, feel free to add your own code to further expand your understanding.
         <br><br>
-        Let's practice using some of the operators above to get a better understanding of them. Like usual, feel free to add your own code to further expand your understanding.
-        <br><br>
-        <pre><code class=language-javascript>var a = 1; //declares a variable named a and assigns it the value 1
-var b = 2; //sets the value of b to 2
-var ab = a + b; //sets the value of c to the floating point number 1.33333
-var c = 4 / 2;
-var d = ab + 1;
+        <pre><code class=language-javascript>var hi = "Hi"; //note: the quotation marks are required so JavaScript knows we are using strings
+var there = " there"; /
+var message = hi + there;
 
 //print out our variables to the console
-console.log(a);
-console.log(b);
-console.log(ab);
-console.log(a + b); //you can also apply operators from within a function call
-console.log(c);
-console.log(d);
+console.log(hi);
+console.log(there);
+console.log(message);
+console.log(hi + there); //you can also apply operators from within a function call
+console.log("hi" + there"); //you can also use strings as literals, just like you would use a number
         </code></pre>
         </div>
     </div>
