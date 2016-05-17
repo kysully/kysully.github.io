@@ -67,23 +67,26 @@
 
 <ol class="breadcrumb" style="margin-bottom: 5px; display: inline-block; font-size: 20px;">
   <li><a href="../index.html">Home</a></li>
-  <li><a href="/lesson2/intro.html">Lesson 2</a></li>
-  <li class="active">Part 2: Arrays</li>
+  <li><a href="/lesson2/intro.html">Lesson 3</a></li>
+  <li class="active">Part 2: Functions</li>
 </ol>
 
 <!-- body -->
 <body>
     
   <div id="mainContent">
-    <p id="introTitle">Lesson 2 - Part 2: Arrays</p>
+    <p id="introTitle">Lesson 3 - Part 2: Functions</p>
     <div class="wellContent">
-        <div class="well">An <strong>array</strong> is at very important part of computer programs. It provides a way for the programmer to aggregate data into one <strong>variable</strong>.
+        <div class="well">Just like <strong>data</strong> is a collection of various values, a <strong>function</strong> is a collection of code. In JavaScript, a programmer can declare a function with instructions inside, and later call the function. When the function is called (invoked) later on, the instructions are executed.
         <br><br>
-        In JavaScript, an <strong>array</strong> can support both a number and a string as the type of data stored in element of the <strong>array</strong>.
+        When calling a function, you can pass in <strong>variables</strong>.This means that a programmer can write a function which takes variables, performs some operation on the data within the variables, and return back to the original flow of the program.
         <br><br>
-        We will first look at <strong>arrays</strong>. An <strong>array</strong> is a collection of data stored inside one variable. We can declare an array using <strong>[] brackets</strong>
-        <pre><code class=language-javascript>var data = [1, "Two", 3, "4", 5]; //declares an array named data
-console.log(data); //prints out the contents of our data
+        Let's check out functions.
+        <pre><code class=language-javascript>function product(p1, p2) {
+    return p1 * p2;              // The function returns the product of p1 and p2
+}
+var x = product(2, 3);
+console.log(x);
         </code></pre>
         </div>
     </div>
@@ -102,12 +105,12 @@ console.log(data); //prints out the contents of our data
   <div class="navFooter">
       <nav>
           <ul class="pager">
-            <li><a href="part1.html" style=" width: 125px;" data-toggle="tooltip" data-placement="left" title="Part 1">Previous</a></li>
-            <li><a href="part3.html" style=" width: 125px;" data-toggle="tooltip" data-placement="right" title="Part 3">Next</a></li>
+            <li><a href="intro.html" style=" width: 125px;" data-toggle="tooltip" data-placement="left" title="Part 1">Previous</a></li>
+            <li><a href="part2.html" style=" width: 125px;" data-toggle="tooltip" data-placement="right" title="Part 3">Next</a></li>
           </ul>
       </nav>
-      <progress class="progress" value="2" max="5">0%</progress>
-      Progress 2 of 5
+      <progress class="progress" value="2" max="3">0%</progress>
+      Progress 2 of 3
   </div>
 
 </body>
