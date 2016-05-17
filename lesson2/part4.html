@@ -70,36 +70,29 @@
 <ol class="breadcrumb" style="margin-bottom: 5px; display: inline-block; font-size: 20px;">
   <li><a href="../index.html">Home</a></li>
   <li><a href="/lesson1/intro.html">Lesson 1</a></li>
-  <li class="active">Part 5: Applying Variables</li>
+  <li class="active">Part 4: Strings and Numbers</li>
 </ol>
 
 <!-- body -->
 <body>
     
   <div id="mainContent">
-    <p id="introTitle">Lesson 1 - Part 5: Applying Variables</p>
+    <p id="introTitle">Lesson 1 - Part 4: Strings and Numbers</p>
     <div class="wellContent">
-        <div class="well">By now you should be starting to become familiar with <strong>variables</strong>, including ways to manipulate their data values. Now let's take a look at a practical application using <strong>variables</strong>.
+        <div class="well">Now let's take a look at using <strong>operators</strong> with variables which hold values of type string. <i>(remember strings are just like words; a series of consecutive characters)</i>. By applying the <strong>+ operator</strong> we can combine two strings together. This is known as <strong>string concatenation</strong>.
         <br><br>
-        Let's apply our knowledge of JavaScript variables to the Pythagorean Theorem <i>(c<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup>)</i>
+        Let's take a look. Like usual, feel free to add your own code to further expand your understanding.
         <br><br>
-        <pre><code class=language-javascript>var a = 3;
-var aa = a * a;
-var b = 4;
-var bb = b * b;
-var cc = aa + bb;
-var c = Math.sqrt(cc); //here we invoke a function call to calculate the square root
-
-var x = Math.sqrt((a * a) + (b * b)); //additionally we could perform the entire calculation on one line
+        <pre><code class=language-javascript>var hi = "Hi"; //note: the quotation marks are required so JavaScript knows we are using strings
+var there = " there";
+var message = hi + there; //here we use + to perform a string concatenation
 
 //print out our variables to the console
-console.log(a);
-console.log(aa);
-console.log(b);
-console.log(bb); 
-console.log(cc);
-console.log(c); 
-console.log(x); 
+console.log(hi);
+console.log(there);
+console.log(message);
+console.log(hi + there); //you can also apply operators from within a function call
+console.log("Hi" + " " + "there"); //you can also use strings as literals, just like you would use a number
         </code></pre>
         </div>
     </div>
@@ -118,12 +111,12 @@ console.log(x);
   <div class="navFooter">
       <nav>
           <ul class="pager">
-            <li><a href="part4.html" style=" width: 125px;" data-toggle="tooltip" data-placement="left" title="Part 4">Previous</a></li>
-            <li><a href="\" style=" width: 125px;" data-toggle="tooltip" data-placement="top" title="Finish">Finish</a></li>
+            <li><a href="part3.html" style=" width: 125px;" data-toggle="tooltip" data-placement="left" title="Part 3">Previous</a></li>
+            <li><a href="part5.html" style=" width: 125px;" data-toggle="tooltip" data-placement="right" title="Part 5">Next</a></li>
           </ul>
       </nav>
-      <progress class="progress" value="5" max="5">0%</progress>
-      Progress 5 of 5
+      <progress class="progress" value="4" max="5">0%</progress>
+      Progress 4 of 5
   </div>
 
 </body>

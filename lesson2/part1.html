@@ -46,7 +46,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="\start.html">Getting Started <span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="\page1.html">Getting Started <span class="sr-only">(current)</span></a></li>
         <li><a href="\about.html">About</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lessons <span class="caret"></span></a>
@@ -70,36 +70,27 @@
 <ol class="breadcrumb" style="margin-bottom: 5px; display: inline-block; font-size: 20px;">
   <li><a href="../index.html">Home</a></li>
   <li><a href="/lesson1/intro.html">Lesson 1</a></li>
-  <li class="active">Part 5: Applying Variables</li>
+  <li class="active">Part 1: Hello World</li>
 </ol>
 
 <!-- body -->
 <body>
     
   <div id="mainContent">
-    <p id="introTitle">Lesson 1 - Part 5: Applying Variables</p>
+    <p id="introTitle">Lesson 1 - Part 1: Hello World</p>
     <div class="wellContent">
-        <div class="well">By now you should be starting to become familiar with <strong>variables</strong>, including ways to manipulate their data values. Now let's take a look at a practical application using <strong>variables</strong>.
+        <div class="well">It is a standard tradition among the world of computer programmers to introduce new users to their first "Hello World" program.
+        So let's dive in!
         <br><br>
-        Let's apply our knowledge of JavaScript variables to the Pythagorean Theorem <i>(c<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup>)</i>
+        Before we get started, let's take a look at a <strong>variable</strong>. A <strong>variable</strong> is a piece of data the exists within the realm of the program.
+        In our example, we will make a new <strong>variable</strong> named <i>x</i>, using the keyword <i>var</i>.
         <br><br>
-        <pre><code class=language-javascript>var a = 3;
-var aa = a * a;
-var b = 4;
-var bb = b * b;
-var cc = aa + bb;
-var c = Math.sqrt(cc); //here we invoke a function call to calculate the square root
-
-var x = Math.sqrt((a * a) + (b * b)); //additionally we could perform the entire calculation on one line
-
-//print out our variables to the console
-console.log(a);
-console.log(aa);
-console.log(b);
-console.log(bb); 
-console.log(cc);
-console.log(c); 
-console.log(x); 
+        In addition, we will use a built-in <strong>function</strong> to take the contents of our <strong>variable</strong> 
+        and display it to the console. The console is a tool built for programmers so they can interact with their programs.
+        <i>(Note, the double slash // denotes a comment. Anything after a comment on the same line is ignore in the program)</i>
+        <pre><code class=language-javascript>var x; //declares a variable named x
+x = "Hello World"; //sets the value of x to "Hello World"
+console.log(x); //prints out the contents of the variable x
         </code></pre>
         </div>
     </div>
@@ -118,12 +109,12 @@ console.log(x);
   <div class="navFooter">
       <nav>
           <ul class="pager">
-            <li><a href="part4.html" style=" width: 125px;" data-toggle="tooltip" data-placement="left" title="Part 4">Previous</a></li>
-            <li><a href="\" style=" width: 125px;" data-toggle="tooltip" data-placement="top" title="Finish">Finish</a></li>
+            <li><a href="intro.html" style=" width: 125px;" data-toggle="tooltip" data-placement="left" title="Introduction Page">Previous</a></li>
+            <li><a href="part2.html" style=" width: 125px;" data-toggle="tooltip" data-placement="right" title="Part 2">Next</a></li>
           </ul>
       </nav>
-      <progress class="progress" value="5" max="5">0%</progress>
-      Progress 5 of 5
+      <progress class="progress" value="1" max="5">0%</progress>
+      Progress 1 of 5
   </div>
 
 </body>
