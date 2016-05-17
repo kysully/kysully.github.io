@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<title>Kyle Sullivan</title>
+
+<script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<link href="/prism/prism.css" rel="stylesheet" />
+<script src="/prism/prism.js"></script>
+
+<link href="/styles/style.css" rel="stylesheet" />
+
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+</script>
+
+</head>
+
+<nav id="custom-bootstrap-menu" class="navbar navbar-dark bg-primary">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="\">Home</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="\start.html">Getting Started <span class="sr-only">(current)</span></a></li>
+        <li><a href="\about.html">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lessons <span class="caret"></span></a>
+          <ul id = "drop1" class="dropdown-menu">
+            <li><a href="/lesson1/intro.html">Introduction to Computer Science (Hello World)</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/lesson2/intro.html">Working with Data</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/lesson3/intro.html">Functions</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<ol class="breadcrumb" style="margin-bottom: 5px; display: inline-block; font-size: 20px;">
+  <li><a href="../index.html">Home</a></li>
+  <li><a href="/lesson2/intro.html">Lesson 2</a></li>
+  <li class="active">Part 2: Arrays</li>
+</ol>
+
+<!-- body -->
+<body>
+    
+  <div id="mainContent">
+    <p id="introTitle">Lesson 2 - Part 2: Arrays</p>
+    <div class="wellContent">
+        <div class="well">An <strong>array</strong> is at very important part of computer programs. It provides a way for the programmer to aggregate data into one <strong>variable</strong>.
+        <br><br>
+        In JavaScript, an <strong>array</strong> can support both a number and a string as the type of data stored in element of the <strong>array</strong>.
+        <br><br>
+        We will first look at <strong>arrays</strong>. An <strong>array</strong> is a collection of data stored inside one variable. We can declare an array using <strong>[] brackets</strong>
+        <pre><code class=language-javascript>var data = [1, "Two", 3, "4", 5]; //declares an array named data
+console.log(data); //prints out the contents of our data
+        </code></pre>
+        </div>
+    </div>
+
+    <div class="wellContent">
+        <div class="well alert alert-info" role="alert">Enter the code snippet we learned above into JS Bin below. The code should be typed into the left side of the bin. When ready, click the run button the right side. When the code runs, JS Bin will process the program you just created and display the output on the right hand side! Pretty neat right? 
+        </div>
+    </div>
+  </div>
+
+  <div class="jsWrapper">
+    <a class="jsbin-embed" href="http://jsbin.com/xufoxe/embed?js,console">JS Bin on jsbin.com</a>
+    <script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
+  </div>
+  
+  <div class="navFooter">
+      <nav>
+          <ul class="pager">
+            <li><a href="part1.html" style=" width: 125px;" data-toggle="tooltip" data-placement="left" title="Part 1">Previous</a></li>
+            <li><a href="part3.html" style=" width: 125px;" data-toggle="tooltip" data-placement="right" title="Part 3">Next</a></li>
+          </ul>
+      </nav>
+      <progress class="progress" value="2" max="5">0%</progress>
+      Progress 2 of 5
+  </div>
+
+</body>
+</html>
+

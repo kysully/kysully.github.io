@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<title>Kyle Sullivan</title>
+
+<script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<link href="/prism/prism.css" rel="stylesheet" />
+<script src="/prism/prism.js"></script>
+
+<link href="/styles/style.css" rel="stylesheet" />
+
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+</script>
+
+</head>
+
+<nav id="custom-bootstrap-menu" class="navbar navbar-dark bg-primary">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="\">Home</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="\start.html">Getting Started <span class="sr-only">(current)</span></a></li>
+        <li><a href="\about.html">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lessons <span class="caret"></span></a>
+          <ul id = "drop1" class="dropdown-menu">
+            <li><a href="/lesson1/intro.html">Introduction to Computer Science (Hello World)</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/lesson2/intro.html">Working with Data</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/lesson3/intro.html">Functions</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<ol class="breadcrumb" style="margin-bottom: 5px; display: inline-block; font-size: 20px;">
+  <li><a href="../index.html">Home</a></li>
+  <li><a href="/lesson3/intro.html">Lesson 3</a></li>
+  <li class="active">Introduction</li>
+</ol>
+
+<!-- body -->
+<body>
+    
+  <div id="mainContent">
+    <p id="introTitle">Lesson 3 - Introduction</p>
+    <div class="wellContent">
+        <div class="well">Welcome to Lesson 3 - Functions. This lesson builds off of the knowledge learned in <a href="../lesson2/intro.html">Lesson 2</a>. In this lesson, we will learn how to use functions within our program.
+        <br><br>
+        We will be using <a href="https://www.javascript.com">JavaScript</a> as our programming language to learn some of the programming fundamentals. Javascript is the programming langauge of the internet, which makes it commonly used, easy to understand, and quick to deploy so you can see instant results as you learn!
+        <br><br>
+        Throughout the lessons, we will be using an embedded development tool provided by <a href="http://jsbin.com/">JS Bin</a>. This will allow us to test out our skills as we learn them!
+        </div>
+    </div>
+  </div>
+  
+  <div class="navFooter">
+      <nav>
+          <ul class="pager">
+            <li><a href="part1.html" style="width: 125px;" data-toggle="tooltip" data-placement="top" title="Let's get started!">Start</a></li>
+          </ul>
+      </nav>
+      <progress class="progress" value="0" max="5">0%</progress>
+      Progress 0 of 5
+  </div>
+
+</body>
+</html>
+
