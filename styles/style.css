@@ -75,7 +75,7 @@ pre{
     padding-top: 5px;
 }
 
-lessonLayout{
+.lessonLayout{
 	display: flex;
 	flex-wrap: wrap;
 	padding: 50px;
