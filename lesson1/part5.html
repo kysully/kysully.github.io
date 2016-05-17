@@ -79,20 +79,27 @@
   <div id="mainContent">
     <p id="introTitle">Lesson 1 - Part 5: Applying Variables</p>
     <div class="wellContent">
-        <div class="well">Now let's take a look at using <strong>operators</strong> with variables which hold values of type string. <i>(remember strings are just like words; a series of consecutive characters)</i>. By applying the <strong>+ operator</strong> we can combine two strings together. This is known as <strong>string concatenation</strong>.
+        <div class="well">By now you should have been starting to become familiar with <strong>variables</strong> as well as ways to manipulate their data values. Now let's take a look at a practical application using <strong>variables</strong>.
         <br><br>
-        Let's take a look. Like usual, feel free to add your own code to further expand your understanding.
+        Let's apply our knowledge of JavaScript variables to the Pythagorean theorem <i>(c<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup>)</i>
         <br><br>
-        <pre><code class=language-javascript>var hi = "Hi"; //note: the quotation marks are required so JavaScript knows we are using strings
-var there = " there";
-var message = hi + there; //here we use + to perform a string concatenation
+        <pre><code class=language-javascript>var a = 3;
+var aa = a * a;
+var b = 4;
+var bb = b * b;
+var cc = aa + bb;
+var c = Math.sqrt(cc); //here we invoke a function call to calculate the square root
+
+var x = Math.sqrt((a * a) + (b * b)); //additionally we could perform the entire calculation on one line
 
 //print out our variables to the console
-console.log(hi);
-console.log(there);
-console.log(message);
-console.log(hi + there); //you can also apply operators from within a function call
-console.log("Hi" + " " + "there"); //you can also use strings as literals, just like you would use a number
+console.log(a);
+console.log(aa);
+console.log(b);
+console.log(bb); 
+console.log(cc);
+console.log(c); 
+console.log(x); 
         </code></pre>
         </div>
     </div>
@@ -112,6 +119,7 @@ console.log("Hi" + " " + "there"); //you can also use strings as literals, just 
       <nav>
           <ul class="pager">
             <li><a href="part4.html" style=" width: 125px;" data-toggle="tooltip" data-placement="left" title="Part 4">Previous</a></li>
+            <li><a href="\" style=" width: 125px;" data-toggle="tooltip" data-placement="top" title="Finish">Finish Lesson</a></li>
           </ul>
       </nav>
       <progress class="progress" value="5" max="5">0%</progress>
