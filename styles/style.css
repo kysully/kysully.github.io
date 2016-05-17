@@ -76,5 +76,7 @@ pre{
 }
 
 lessonLayout{
+	display: flex;
+	flex-wrap: wrap;
 	padding: 50px;
 }
