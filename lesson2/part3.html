@@ -67,68 +67,28 @@
 
 <ol class="breadcrumb" style="margin-bottom: 5px; display: inline-block; font-size: 20px;">
   <li><a href="../index.html">Home</a></li>
-  <li><a href="/lesson1/intro.html">Lesson 1</a></li>
-  <li class="active">Part 3: Working with Variables</li>
+  <li><a href="/lesson2/intro.html">Lesson 2</a></li>
+  <li class="active">Part 3: Arrays (Cont.)</li>
 </ol>
 
 <!-- body -->
 <body>
     
   <div id="mainContent">
-    <p id="introTitle">Lesson 1 - Part 3: Working with Variables</p>
+    <p id="introTitle">Lesson 2 - Part 3: Arrays (Cont.)</p>
     <div class="wellContent">
-        <div class="well">Let's continue our introduction by exploring some more details about <strong>variables</strong>.
+        <div class="well">While working with <strong>arrays</strong>, you can access each individual element as a single data value. This is done by using the <strong>[] bracket operator</strong>.
         <br><br>
-        The value of variables can be manipulated using <strong>operators</strong>. A list of some common javascript <strong>operators</strong> is below: <br>
-        <table class="table"><tbody><tr>
-        <th style="width:25%">Operator</th>
-        <th>Description</th>
-        </tr>
-        <tr>
-        <td>+</td>
-        <td>Addition</td>
-        </tr>
-        <tr>
-        <td>-</td>
-        <td>Subtraction</td>
-        </tr>
-        <tr>
-        <td>*</td>
-        <td>Multiplication</td>
-        </tr>
-        <tr>
-        <td>/</td>
-        <td>Division</td>
-        </tr>
-        <tr>
-        <td>%</td>
-        <td>Modulus</td>
-        </tr>
-        <tr>
-        <td>++</td>
-        <td>Increment</td>
-        </tr>
-        <tr>
-        <td>--</td>
-        <td>Decrement</td>
-        </tr>
-        </tbody></table>
+        To specify which element you would like to access in the array, you must pass an index value (a number) to the <strong>[] bracket operator</strong>. <i>(Note: indexs start at 0, so to access the first element, you must supply the number 0 as an index)</i>
         <br><br>
-        Let's practice using some of the operators above to get a better understanding of them. Like usual, feel free to add your own code to further expand your understanding.
-        <br><br>
-        <pre><code class=language-javascript>var a = 1; //declares a variable named a and assigns it the value 1
-var b = 2; //sets the value of b to 2
-var ab = a + b;
-var c = 4 / 2;
-var d = ab + 1;
-
-//print out our variables to the console
-console.log(a);
-console.log(b);
-console.log(ab);
-console.log(a + b); //you can also apply operators from within a function call
-console.log(c);
-console.log(d);
+        Let's look at some examples.
+        <pre><code class=language-javascript>var data = [1, "Two", 3, "4", 5]; //declares an array named data
+var x = data[0];
+var y = data[1];
+data[2] = 100; //set the 2nd index (3rd element) to the value 100
+console.log(data); //prints out the contents of our data
+console.log(x);
+console.log(y);
         </code></pre>
         </div>
     </div>
