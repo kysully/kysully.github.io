@@ -79,16 +79,17 @@
     <div class="wellContent">
         <div class="well">In addition to <strong>arrays</strong>, Javascript also offers <strong>objects</strong>. <strong>Objects</strong> allow the programmer to create a collection of data which can then be stored as a single variable. This is done by using the <strong>{} curly brace operator</strong>.
         <br><br>
-        To specify which element you would like to access in the array, you must pass an index value (a number) to the <strong>[] bracket operator</strong>. <i>(Note: indexs start at 0, so to access the first element, you must supply the number 0 as an index)</i>
+        A difference between <strong>arrays</strong> and <strong>objects</strong> is that <strong>objects</strong> use a key-pair relationship to store data, where as <strong>arrays</strong> use a numerical index.
         <br><br>
         Let's look at some examples.
-        <pre><code class=language-javascript>var data = [1, "Two", 3, "4", 5]; //declares an array named data
-var x = data[0];
-var y = data[1];
-data[2] = 100; //set the 2nd index (3rd element) to the value 100
-console.log(data); //prints out the contents of our data
-console.log(x);
-console.log(y);
+        <pre><code class=language-javascript>var dataObject = {"name": "Kyle", "age": 22, "favFood": "Ice Cream"}; //declares an object named dataObject
+var name = dataObject.name;
+var age = dataObject.age;
+var favFood = dataObject.favFood;
+console.log(dataObject); //prints out the contents of our data
+console.log(name);
+console.log(age);
+console.log(favFood);
         </code></pre>
         </div>
     </div>
