@@ -94,13 +94,13 @@ body{
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lessons <span class="caret"></span></a>
           <ul id = "drop1" class="dropdown-menu">
-            <li><a href="/lesson1/intro.html">Introduction to Computer Science (Hello World)</a></li>
+            <li><a href="#page1">Introduction to Computer Science (Hello World)</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="/lesson2/intro.html">Lesson 2</a></li>
+            <li><a href="#">Lesson 2</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Lesson 3</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="/lesson3/intro.html">Lesson 4</a></li>
+            <li><a href="#">Lesson 4</a></li>
           </ul>
         </li>
       </ul>
@@ -110,9 +110,15 @@ body{
   </div><!-- /.container-fluid -->
 </nav>
 
+<ol class="breadcrumb" style="margin-bottom: 5px;">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Lesson 1</a></li>
+  <li class="active">Part 1 - Hello World</li>
+</ol>
+
 <body>
   <div id="mainContent">
-    <p id="helloText">Hello, Welcome to Kyle Sullivan's Multimedia Project!</p>
+    <p id="helloText">Lesson 1 - Part 1: "Hello World"</p>
   </div>
   
   <div class="card text-xs-center">
@@ -128,6 +134,16 @@ body{
     2 days ago
   </div>
   </div>
+
+
+  <progress class="progress" value="0" max="100">0%</progress>
+  
+  <nav>
+    <ul class="pager">
+      <li><a href="#">Previous</a></li>
+      <li><a href="#">Next</a></li>
+    </ul>
+  </nav>
 
 </body>
 </html>

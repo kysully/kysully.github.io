@@ -17,62 +17,19 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-<style type="text/css">
+<link href="/prism/prism.css" rel="stylesheet" />
+<script src="/prism/prism.js"></script>
 
-body{
-	background-color: #E3F0FB;
-}
+<link href="/styles/style.css" rel="stylesheet" />
 
-#mainContent {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: xx-large;
-	font-weight: bold;
-	background-color: #E3F0FB;
-	border-radius: 4px;
-	padding: 10px;
-	text-align: center;
-}
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+</script>
 
-#custom-bootstrap-menu.navbar {
-    font-size: 24px;
-    color: #fff;
-}
-
-#custom-bootstrap-menu a {
-    font-size: 24px;
-    color: #fff;
-}
-
-.buttonStyle {
-	border-radius: 4px;
-	border: thin solid #F0E020;
-	padding: 5px;
-	background-color: #F8F094;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	font-weight: bold;
-	color: #663300;
-	width: 75px;
-}
-
-.buttonStyle:hover {
-	border: thin solid #FFCC00;
-	background-color: #FCF9D6;
-	color: #996633;
-	cursor: pointer;
-}
-.buttonStyle:active {
-	border: thin solid #99CC00;
-	background-color: #F5FFD2;
-	color: #669900;
-	cursor: pointer;
-}
-
-#drop1 a{
- color: black; 
-}
-
-</style>
 </head>
+
 <nav id="custom-bootstrap-menu" class="navbar navbar-dark bg-primary">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -94,13 +51,13 @@ body{
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lessons <span class="caret"></span></a>
           <ul id = "drop1" class="dropdown-menu">
-            <li><a href="/lesson1/intro.html">Introduction to Computer Science (Hello World)</a></li>
+            <li><a href="#page1">Introduction to Computer Science (Hello World)</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="/lesson2/intro.html">Lesson 2</a></li>
+            <li><a href="#">Lesson 2</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Lesson 3</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="/lesson3/intro.html">Lesson 4</a></li>
+            <li><a href="#">Lesson 4</a></li>
           </ul>
         </li>
       </ul>
@@ -110,23 +67,35 @@ body{
   </div><!-- /.container-fluid -->
 </nav>
 
+<ol class="breadcrumb" style="margin-bottom: 5px; display: inline-block; font-size: 20px;">
+  <li><a href="../index.html">Home</a></li>
+  <li><a href="/lesson1/intro.html">Lesson 1</a></li>
+  <li class="active">Introduction</li>
+</ol>
+
+<!-- body -->
 <body>
+    
   <div id="mainContent">
-    <p id="helloText">Hello, Welcome to Kyle Sullivan's Multimedia Project!</p>
+    <p id="introTitle">Lesson 1 - Introduction</p>
+    <div class="wellContent">
+        <div class="well"> Hello there, welcome to the first lesson! Here you will learn a brief overview of some basic computer science principles before moving on to cooler topics!
+        <br><br>
+        There are many programming languages to choose from, with each one accomplisheing the same goal of telling the computer what to do.
+        <br><br>
+        We will be using <a href="https://www.javascript.com">JavaScript</a> as our programming language to learn some of the programming fundamentals. Javascript is the programming langauge of the internet, which makes it commonly used, easy to understand, and quick to deploy so you can see instant results as you learn!
+        </div>
+    </div>
   </div>
   
-  <div class="card text-xs-center">
-  <div class="card-header">
-    Featured
-  </div>
-  <div class="card-block">
-    <h4 class="card-title">Special title treatment</h4>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-  <div class="card-footer text-muted">
-    2 days ago
-  </div>
+  <div class="navFooter">
+      <nav>
+          <ul class="pager">
+            <li><a href="part1.html" style="width: 125px;" data-toggle="tooltip" data-placement="top" title="Let's get started!">Start</a></li>
+          </ul>
+      </nav>
+      <progress class="progress" value="0" max="10">0%</progress>
+      Progress 0 of 10
   </div>
 
 </body>
