@@ -46,7 +46,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="\page1.html">Getting Started <span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="\start.html">Getting Started <span class="sr-only">(current)</span></a></li>
         <li><a href="\about.html">About</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lessons <span class="caret"></span></a>
@@ -70,7 +70,7 @@
 <ol class="breadcrumb" style="margin-bottom: 5px; display: inline-block; font-size: 20px;">
   <li><a href="../index.html">Home</a></li>
   <li><a href="/lesson1/intro.html">Lesson 1</a></li>
-  <li class="active">Part 2: Variables</li>
+  <li class="active">Part 3: Working with Variables</li>
 </ol>
 
 <!-- body -->
@@ -81,7 +81,7 @@
     <div class="wellContent">
         <div class="well">Let's continue our introduction by exploring some more details about <strong>variables</strong>.
         <br><br>
-        The value of variables can be manipulated using <strong>operators</strong>. A list of some common javascript <strong>operators</strong> is below.
+        The value of variables can be manipulated using <strong>operators</strong>. A list of some common javascript <strong>operators</strong> is below: <br>
         <table class="table"><tbody><tr>
         <th style="width:25%">Operator</th>
         <th>Description</th>
@@ -115,18 +115,22 @@
         <td>Decrement</td>
         </tr>
         </tbody></table>
-
-
+        <br><br>
+        Let's practice using some of the operators above to get a better understanding of them.
+        <br><br>
         <pre><code class=language-javascript>var a = 1; //declares a variable named a and assigns it the value 1
 var b = 2; //sets the value of b to 2
-var c = 3.33333 //sets the value of c to the floating point number 1.33333
-var word = "cool"
+var ab = a + b; //sets the value of c to the floating point number 1.33333
+var c = 4 / 2;
+var d = ab + 1;
 
 //print out our variables to the console
 console.log(a);
 console.log(b);
+console.log(ab);
+console.log(a + b); //you can also apply operators from within a function call
 console.log(c);
-console.log(word);
+console.log(d);
         </code></pre>
         </div>
     </div>
