@@ -51,13 +51,11 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lessons <span class="caret"></span></a>
           <ul id = "drop1" class="dropdown-menu">
-            <li><a href="#page1">Introduction to Computer Science (Hello World)</a></li>
+            <li><a href="/lesson1/intro.html">Introduction to Computer Science (Hello World)</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Lesson 2</a></li>
+            <li><a href="/lesson2/intro.html">Working with Data</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Lesson 3</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Lesson 4</a></li>
+            <li><a href="/lesson3/intro.html">Lesson 3</a></li>
           </ul>
         </li>
       </ul>
@@ -69,37 +67,30 @@
 
 <ol class="breadcrumb" style="margin-bottom: 5px; display: inline-block; font-size: 20px;">
   <li><a href="../index.html">Home</a></li>
-  <li><a href="/lesson1/intro.html">Lesson 1</a></li>
-  <li class="active">Part 5: Applying Variables</li>
+  <li><a href="/lesson2/intro.html">Lesson 2</a></li>
+  <li class="active">Part 5: Working With Data</li>
 </ol>
 
 <!-- body -->
 <body>
     
   <div id="mainContent">
-    <p id="introTitle">Lesson 1 - Part 5: Applying Variables</p>
+    <p id="introTitle">Lesson 2 - Part 5: Working With Data</p>
     <div class="wellContent">
-        <div class="well">By now you should be starting to become familiar with <strong>variables</strong>, including ways to manipulate their data values. Now let's take a look at a practical application using <strong>variables</strong>.
+        <div class="well">Now that we have seen <strong>arrays</strong> and <strong>objects</strong>, we can start to master how to handle data.
         <br><br>
-        Let's apply our knowledge of JavaScript variables to the Pythagorean Theorem <i>(c<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup>)</i>
+        Lets use our two new data types to model some realistic objects. We can model a student taking a class using the notions we have learned in this lesson.
         <br><br>
-        <pre><code class=language-javascript>var a = 3;
-var aa = a * a;
-var b = 4;
-var bb = b * b;
-var cc = aa + bb;
-var c = Math.sqrt(cc); //here we invoke a function call to calculate the square root
-
-var x = Math.sqrt((a * a) + (b * b)); //additionally we could perform the entire calculation on one line
-
-//print out our variables to the console
-console.log(a);
-console.log(aa);
-console.log(b);
-console.log(bb); 
-console.log(cc);
-console.log(c); 
-console.log(x); 
+        Let's look at some examples.
+        <pre><code class=language-javascript>var classRoster = []; //declare an array to store the class roster
+var student1 = {name: "Kyle", age: 21, studentID: 1234, grade: "A"};
+var student2 = {name: "John", age: 22, studentID: 4352, grade: "A-"};
+var student3 = {name: "Mary", age: 20, studentID: 2322, grade: "B"};
+classRoster[0] = student1;
+classRoster[1] = student2;
+classRoster[3] = student3;
+console.log(classRoster);
+console.log(classRoster[0].name + " has an " + classRoster[0].grade + " in the class.");
         </code></pre>
         </div>
     </div>
@@ -119,7 +110,7 @@ console.log(x);
       <nav>
           <ul class="pager">
             <li><a href="part4.html" style=" width: 125px;" data-toggle="tooltip" data-placement="left" title="Part 4">Previous</a></li>
-            <li><a href="\" style=" width: 125px;" data-toggle="tooltip" data-placement="top" title="Finish">Finish</a></li>
+            <li><a href="../index.html" style=" width: 125px;" data-toggle="tooltip" data-placement="right" title="Finish">Finish</a></li>
           </ul>
       </nav>
       <progress class="progress" value="5" max="5">0%</progress>
