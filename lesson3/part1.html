@@ -67,23 +67,26 @@
 
 <ol class="breadcrumb" style="margin-bottom: 5px; display: inline-block; font-size: 20px;">
   <li><a href="../index.html">Home</a></li>
-  <li><a href="/lesson2/intro.html">Lesson 2</a></li>
-  <li class="active">Part 1: Data</li>
+  <li><a href="/lesson2/intro.html">Lesson 3</a></li>
+  <li class="active">Part 1: Intro to Functions</li>
 </ol>
 
 <!-- body -->
 <body>
     
   <div id="mainContent">
-    <p id="introTitle">Lesson 2 - Part 1: Data</p>
+    <p id="introTitle">Lesson 3 - Part 1: Intro to Functions</p>
     <div class="wellContent">
-        <div class="well">Data is at the essence of what computer scientists handle. Every program is written to perform some operation on some data. This website that you are reading is comprised of various different forms of data that your web browser (the program handling the data) interprets and displays on your screen.
+        <div class="well">Just like <strong>data</strong> is a collection of various values, a <strong>function</strong> is a collection of code. In JavaScript, a programmer can declare a function with instructions inside, and later call the function. When the function is called (invoked) later on, the instructions are executed.
         <br><br>
-        In <i><a href="../lesson1/intro.html">Lesson 1</a></i>, we learned about using <strong>variables</strong>. Now we will learn a new <strong>variable</strong> which can handle the data we will be using.
+        When calling a function, you can pass in <strong>variables</strong>.This means that a programmer can write a function which takes variables, performs some operation on the data within the variables, and return back to the original flow of the program.
         <br><br>
-        We will first look at <strong>arrays</strong>. An <strong>array</strong> is a collection of data stored inside one variable.
-        <pre><code class=language-javascript>var data = [1, 2, 3, 4, 5]; //declares an array named data
-console.log(data); //prints out the contents of our data
+        Let's check out functions.
+        <pre><code class=language-javascript>function product(p1, p2) {
+    return p1 * p2;              // The function returns the product of p1 and p2
+}
+var x = product(2, 3);
+console.log(x);
         </code></pre>
         </div>
     </div>
