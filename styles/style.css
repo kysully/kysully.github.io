@@ -68,3 +68,7 @@ body{
 pre{
   font-size: 16px;
 }
+
+jsWrapper{
+    padding: 50px;
+}
